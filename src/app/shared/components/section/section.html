@@ -1,0 +1,11 @@
+<div>
+  @if (sobreposicao() && (brand() === 'uniasselvi')) {
+  <div class="flex relative -bottom-px">
+    <div class="sobre-left" [class]="backgroundClass()"></div>
+    <div class="sobre-right" [class]="backgroundClass()"></div>
+  </div>
+  }
+  <div class="background" [class]="backgroundClass()">
+    <ng-content />
+  </div>
+</div>

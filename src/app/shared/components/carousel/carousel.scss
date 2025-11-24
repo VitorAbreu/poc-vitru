@@ -1,0 +1,63 @@
+// $grid-margin: 80px;
+// $grid-gutter: 16px;
+// $grid-columns: 12;
+
+// // padrão: cada card ocupa 3 colunas
+// $card-columns: 3;
+
+// // Função para calcular o span de colunas
+// @function span($cols) {
+//   $total-gutters: ($grid-columns - 1) * $grid-gutter;
+//   $col-width: (100% - ($grid-margin * 2) - $total-gutters) / $grid-columns;
+//   @return ($col-width * $cols) + ($grid-gutter * ($cols - 1));
+// }
+
+// .carousel-container {
+//   width: 100%;
+//   overflow-x: scroll;
+//   scroll-snap-type: x mandatory;
+//   grid-auto-flow: column;
+//   padding: 0 $grid-margin;
+//   scrollbar-width: none;
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+// }
+
+// .carousel-card {
+//   scroll-snap-align: center;
+
+//   // &:first-child {
+//   //   margin-left: 5rem;
+//   // }
+// }
+$grid-margin: 80px;
+$grid-gutter: 16px;
+
+// ---------------------------------------------
+// Carousel
+// ---------------------------------------------
+.carousel-container {
+  width: 100%;
+  scrollbar-width: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// .carousel-track {
+//   overflow-x: auto;
+//   scroll-snap-type: x mandatory;
+// }
+.spacer {
+  width: 0.1px;
+  scroll-snap-align: end;
+}
+.carousel-card {
+  background: #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+}

@@ -1,0 +1,20 @@
+.sobre-right {
+  height: 2rem;
+  width: 50%;
+  border-top-left-radius: 250px 100px;
+}
+.sobre-left {
+  height: 2rem;
+  width: 50%;
+  border-top-right-radius: 250px 100px;
+}
+:host {
+  &:has(+ .sobreposition) div.background {
+    padding-bottom: 5rem;
+  }
+  &.sobreposition > div {
+    position: relative;
+    top: -2rem;
+    margin-bottom: -2rem;
+  }
+}

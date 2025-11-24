@@ -1,0 +1,38 @@
+<div class="bg-white border border-[#CFD3D3] rounded-3xl">
+  <div
+    class="h-[184px] bg-cover relative px-4 rounded-t-3xl"
+    [style.background-image]="'url(' + professor().foto + ')'"
+  >
+    <div
+      class="rounded-4xl absolute right-4 bottom-[-16px] w-[40px] h-[40px] bg-secondary-500 flex items-center justify-center"
+    >
+      <img src="/icons/direction.svg" class="w-[18px] h-[18px] text-lg" alt="seta direita" />
+    </div>
+  </div>
+  <div class="p-3 mt-1">
+    <p class="text-sm color-neutral-600">Graduação • Presencial</p>
+    <h3 class="text-xl mt-1 titillium-web-bold">{{ professor().nome }}</h3>
+    <p class="color-neutral-600 mb-13">{{ professor().profissao }}</p>
+
+    <s class="color-neutral-600">R$ 930,00</s>
+    <div class="flex justify-between mb-6">
+      <p class="font-bold">R$ 706,80/mês</p>
+      <span class="bg-primary-300 font-semibold px-2 rounded-lg text-xs content-center">
+        24% off
+      </span>
+    </div>
+    <hr class="w-full border-[#CFD3D3] mb-6" />
+    <div class="flex justify-between gap-1 flex-wrap">
+      <button
+        class="border grow text-sm font-semibold border-button button-border-radius px-5 py-2"
+      >
+        Inscreva-se
+      </button>
+      <button
+        class="bg-black grow text-sm font-semibold text-white border-button bg-button-color button-border-radius px-5 py-2"
+      >
+        Saiba mais
+      </button>
+    </div>
+  </div>
+</div>

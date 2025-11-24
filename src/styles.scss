@@ -1,1 +1,258 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+body {
+  font-family: 'Roboto', sans-serif;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    font-family: 'Onest', sans-serif;
+  }
+}
+
+.onest {
+  font-family: 'Onest', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    font-family: 'Onest', sans-serif;
+  }
+}
+
+.titillium-web-extralight {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    font-family: 'Onest', sans-serif;
+  }
+}
+
+.titillium-web-light {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    font-family: 'Onest', sans-serif;
+  }
+}
+
+.titillium-web-regular {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    font-family: 'Onest', sans-serif;
+  }
+}
+
+.titillium-web-semibold {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    font-family: 'Onest', sans-serif;
+  }
+}
+
+.titillium-web-bold {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    font-family: 'Onest', sans-serif;
+  }
+}
+
+.titillium-web-black {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    font-family: 'Onest', sans-serif;
+  }
+}
+
+.titillium-web-extralight-italic {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+:root[data-brand='uniasselvi'][data-theme='light'] {
+  --brandColorsPrimary100: #fffeee;
+  --brandColorsPrimary300: #fff8b0;
+  --brandColorsPrimary500: #ffea00;
+  --brandColorsPrimary700: #e7d300;
+  --brandColorsPrimary900: #cebd00;
+  --brandColorsSecondary100: #e9f3f2;
+  --brandColorsSecondary300: #b5e1db;
+  --brandColorsSecondary500: #00a6a6;
+  --brandColorsSecondary700: #008f8f;
+  --brandColorsSecondary900: #006666;
+  --neutralColorsGrey100: #eceeee;
+  --neutralColorsGrey600: #616867;
+}
+
+// :root[data-brand='uniasselvi'][data-theme='dark'] {
+
+// }
+
+:root[data-brand='unicesumar'][data-theme='light'] {
+  --brandColorsPrimary100: #ddf2ff;
+  --brandColorsPrimary300: #5fb8fc;
+  --brandColorsPrimary500: #0084da;
+  --brandColorsPrimary700: #023860;
+  --brandColorsPrimary900: #0e3043;
+  --brandColorsSecondary100: #eaf6fe;
+  --brandColorsSecondary300: #b1e2ff;
+  --brandColorsSecondary500: #246bf7;
+  --brandColorsSecondary700: #0a4694;
+  --brandColorsSecondary900: #07233e;
+  --neutralColorsGrey100: #edf1f2;
+  --neutralColorsGrey600: #66747e;
+}
+
+$bg-primary-100: var(--brandColorsPrimary100);
+$bg-primary-300: var(--brandColorsPrimary300);
+$bg-primary-500: var(--brandColorsPrimary500);
+$bg-primary-700: var(--brandColorsPrimary700);
+$bg-primary-900: var(--brandColorsPrimary900);
+
+$bg-secondary-100: var(--brandColorsSecondary100);
+$bg-secondary-300: var(--brandColorsSecondary300);
+$bg-secondary-500: var(--brandColorsSecondary500);
+$bg-secondary-700: var(--brandColorsSecondary700);
+$bg-secondary-900: var(--brandColorsSecondary900);
+$bg-neutral-100: var(--neutralColorsGrey100);
+$bg-neutral-600: var(--neutralColorsGrey600);
+
+$color-surface: var(--color-surface);
+$color-text: var(--color-text);
+$color-accent: var(--color-accent);
+$color-border: var(--color-border);
+
+// Alias
+$color-bg: $color-surface;
+
+.button-border-radius {
+  border-radius: 500px;
+  text-transform: uppercase;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    border-radius: 8px;
+    text-transform: none;
+  }
+}
+
+.paragraphVagas {
+  color: black;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    color: white;
+  }
+}
+
+.titleVagas {
+  color: black;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    color: #4bdeff;
+  }
+}
+
+.linkColor {
+  color: $bg-secondary-900;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    color: #4bdeff;
+  }
+}
+
+.border-button {
+  border-color: #cfd3d3;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    border-color: #07233e;
+  }
+}
+
+.bg-button-color {
+  background-color: #000000;
+
+  [data-brand='unicesumar'][data-theme='light'] & {
+    background-color: #07233e;
+    color: #ffffff;
+  }
+}
+
+.bg-primary-100 {
+  background-color: $bg-primary-100;
+}
+.bg-primary-300 {
+  background-color: $bg-primary-300;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    background-color: #f8e8e7;
+  }
+}
+.bg-section {
+  background-color: $bg-primary-500;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    background-color: $bg-primary-700;
+  }
+}
+.bg-section-dual {
+  background-color: $bg-primary-500;
+  [data-brand='unicesumar'][data-theme='light'] & {
+    background: linear-gradient(
+      to bottom,
+      var(--brandColorsPrimary500) 50%,
+      var(--brandColorsPrimary700) 50%
+    );
+  }
+}
+.bg-primary-700 {
+  background-color: $bg-primary-700;
+}
+.bg-primary-900 {
+  background-color: $bg-primary-900;
+}
+
+.bg-secondary-100 {
+  background-color: $bg-secondary-100;
+}
+.bg-secondary-300 {
+  background-color: $bg-secondary-300;
+}
+.bg-secondary-500 {
+  background-color: $bg-secondary-500;
+}
+.bg-secondary-700 {
+  background-color: $bg-secondary-700;
+}
+.bg-secondary-900 {
+  background-color: $bg-secondary-900;
+}
+
+.bg-neutral-100 {
+  background-color: $bg-neutral-100;
+}
+.color-neutral-600 {
+  color: $bg-neutral-600;
+}
