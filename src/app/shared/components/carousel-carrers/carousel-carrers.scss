@@ -6,7 +6,6 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   max-width: 100vw;
-  padding: 0 var(--ids_size_general_24x);
   overflow-x: scroll;
   display: flex;
   gap: 24px;
@@ -18,8 +17,4 @@
 
 .carousel-card {
   scroll-snap-align: center;
-
-  &:first-child {
-    margin-left: 5rem;
-  }
 }
