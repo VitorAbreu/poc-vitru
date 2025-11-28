@@ -1,0 +1,38 @@
+@use '../tokens/primitives/uniasselvi_primitive-colors' as brand;
+@use 'sass:map';
+
+[data-brand='uniasselvi'][data-theme='dark'] {
+  --brandColorsPrimary100: #{map.get(brand.$brand-uniasselvi-primitives, color-yellow-100)};
+  --brandColorsPrimary300: #{map.get(brand.$brand-uniasselvi-primitives, color-yellow-300)};
+  --brandColorsPrimary500: #{map.get(brand.$brand-uniasselvi-primitives, color-yellow-500)};
+  --brandColorsPrimary700: #{map.get(brand.$brand-uniasselvi-primitives, color-yellow-700)};
+  --brandColorsPrimary900: #{map.get(brand.$brand-uniasselvi-primitives, color-yellow-900)};
+  --brandColorsSecondary100: #{map.get(brand.$brand-uniasselvi-primitives, color-teal-100)};
+  --brandColorsSecondary300: #{map.get(brand.$brand-uniasselvi-primitives, color-teal-300)};
+  --brandColorsSecondary500: #{map.get(brand.$brand-uniasselvi-primitives, color-teal-500)};
+  --brandColorsSecondary700: #{map.get(brand.$brand-uniasselvi-primitives, color-teal-700)};
+  --brandColorsSecondary900: #{map.get(brand.$brand-uniasselvi-primitives, color-teal-900)};
+  --brandColorsAccent100: #{map.get(brand.$brand-uniasselvi-primitives, color-aqua-100)};
+  --brandColorsAccent300: #{map.get(brand.$brand-uniasselvi-primitives, color-aqua-300)};
+  --brandColorsAccent500: #{map.get(brand.$brand-uniasselvi-primitives, color-aqua-500)};
+  --brandColorsAccent700: #{map.get(brand.$brand-uniasselvi-primitives, color-aqua-700)};
+  --brandColorsAccent900: #{map.get(brand.$brand-uniasselvi-primitives, color-aqua-900)};
+  --neutralColorsWhite: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-800)};
+  --neutralColorsGrey100: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-700)};
+  --neutralColorsGrey200: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-600)};
+  --neutralColorsGrey300: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-500)};
+  --neutralColorsGrey400: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-400)};
+  --neutralColorsGrey500: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-500)};
+  --neutralColorsGrey600: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-600)};
+  --neutralColorsGrey700: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-700)};
+  --neutralColorsGrey800: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-800)};
+  --neutralColorsGrey900: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-900)};
+  --neutralColorsBlack: #{map.get(brand.$brand-uniasselvi-primitives, color-black)};
+
+  --fontColorsPrimarytitle: #{map.get(brand.$brand-uniasselvi-primitives, color-white)};
+  --fontColorsPrimarybody: #{map.get(brand.$brand-uniasselvi-primitives, color-white)};
+  --fontColorsPrimaryColorful: #{map.get(brand.$brand-uniasselvi-primitives, color-black)};
+  --fontColorsWhite: #{map.get(brand.$brand-uniasselvi-primitives, color-white)};
+  --fontColorsTextColorful: #{map.get(brand.$brand-uniasselvi-primitives, color-teal-300)};
+  --fontColorsGrey: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-300)};
+}

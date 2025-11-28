@@ -1,0 +1,140 @@
+$semantic-tokens: (
+  brandColorsPrimary100: var(--brandColorsPrimary100),
+  brandColorsPrimary300: var(--brandColorsPrimary300),
+  brandColorsPrimary500: var(--brandColorsPrimary500),
+  brandColorsPrimary700: var(--brandColorsPrimary700),
+  brandColorsPrimary900: var(--brandColorsPrimary900),
+  brandColorsSecondary100: var(--brandColorsSecondary100),
+  brandColorsSecondary300: var(--brandColorsSecondary300),
+  brandColorsSecondary500: var(--brandColorsSecondary500),
+  brandColorsSecondary700: var(--brandColorsSecondary700),
+  brandColorsSecondary900: var(--brandColorsSecondary900),
+  brandColorsAccent100: var(--brandColorsAccent100),
+  brandColorsAccent300: var(--brandColorsAccent300),
+  brandColorsAccent500: var(--brandColorsAccent500),
+  brandColorsAccent700: var(--brandColorsAccent700),
+  brandColorsAccent900: var(--brandColorsAccent900),
+  neutralColorsWhite: var(--neutralColorsWhite),
+  neutralColorsGrey100: var(--neutralColorsGrey100),
+  neutralColorsGrey200: var(--neutralColorsGrey200),
+  neutralColorsGrey300: var(--neutralColorsGrey300),
+  neutralColorsGrey400: var(--neutralColorsGrey400),
+  neutralColorsGrey500: var(--neutralColorsGrey500),
+  neutralColorsGrey600: var(--neutralColorsGrey600),
+  neutralColorsBlack: var(--neutralColorsBlack),
+  feedbackColorsInformative100: var(--feedbackColorsInformative100),
+  feedbackColorsInformative300: var(--feedbackColorsInformative300),
+  feedbackColorsInformative500: var(--feedbackColorsInformative500),
+  feedbackColorsInformative700: var(--feedbackColorsInformative700),
+  feedbackColorsInformative900: var(--feedbackColorsInformative900),
+  feedbackColorsSuccess100: var(--feedbackColorsSuccess100),
+  feedbackColorsSuccess300: var(--feedbackColorsSuccess300),
+  feedbackColorsSuccess500: var(--feedbackColorsSuccess500),
+  feedbackColorsSuccess700: var(--feedbackColorsSuccess700),
+  feedbackColorsSuccess900: var(--feedbackColorsSuccess900),
+  feedbackColorsWarning100: var(--feedbackColorsWarning100),
+  feedbackColorsWarning300: var(--feedbackColorsWarning300),
+  feedbackColorsWarning500: var(--feedbackColorsWarning500),
+  feedbackColorsWarning700: var(--feedbackColorsWarning700),
+  feedbackColorsWarning900: var(--feedbackColorsWarning900),
+  feedbackColorsError100: var(--feedbackColorsError100),
+  feedbackColorsError300: var(--feedbackColorsError300),
+  feedbackColorsError500: var(--feedbackColorsError500),
+  feedbackColorsError700: var(--feedbackColorsError700),
+  feedbackColorsError900: var(--feedbackColorsError900),
+  supportColorsSupport1100: var(--supportColorsSupport1100),
+  supportColorsSupport1300: var(--supportColorsSupport1300),
+  supportColorsSupport1500: var(--supportColorsSupport1500),
+  supportColorsSupport1700: var(--supportColorsSupport1700),
+  supportColorsSupport1900: var(--supportColorsSupport1900),
+  supportColorsSupport2100: var(--supportColorsSupport2100),
+  supportColorsSupport2300: var(--supportColorsSupport2300),
+  supportColorsSupport2500: var(--supportColorsSupport2500),
+  supportColorsSupport2700: var(--supportColorsSupport2700),
+  supportColorsSupport2900: var(--supportColorsSupport2900),
+  supportColorsSupport3100: var(--supportColorsSupport3100),
+  supportColorsSupport3300: var(--supportColorsSupport3300),
+  supportColorsSupport3500: var(--supportColorsSupport3500),
+  supportColorsSupport3700: var(--supportColorsSupport3700),
+  supportColorsSupport3900: var(--supportColorsSupport3900),
+  supportColorsSupport4100: var(--supportColorsSupport4100),
+  supportColorsSupport4300: var(--supportColorsSupport4300),
+  supportColorsSupport4500: var(--supportColorsSupport4500),
+  supportColorsSupport4700: var(--supportColorsSupport4700),
+  supportColorsSupport4900: var(--supportColorsSupport4900),
+  buttonButtonShapeColorsPrimaryButtonPrimaryShapeColorEnabled:
+    var(--buttonButtonShapeColorsPrimaryButtonPrimaryShapeColorEnabled),
+  buttonButtonShapeColorsPrimaryButtonPrimaryShapeColorHovered:
+    var(--buttonButtonShapeColorsPrimaryButtonPrimaryShapeColorHovered),
+  buttonButtonShapeColorsPrimaryButtonPrimaryShapeColorDisabled:
+    var(--buttonButtonShapeColorsPrimaryButtonPrimaryShapeColorDisabled),
+  buttonButtonShapeColorsInverseButtonInverseShapeColorEnabled:
+    var(--buttonButtonShapeColorsInverseButtonInverseShapeColorEnabled),
+  buttonButtonShapeColorsInverseButtonInverseShapeColorHovered2:
+    var(--buttonButtonShapeColorsInverseButtonInverseShapeColorHovered2),
+  buttonButtonShapeColorsInverseButtonInverseShapeColorDisabled2:
+    var(--buttonButtonShapeColorsInverseButtonInverseShapeColorDisabled2),
+  buttonButtonFontColorsPrimaryButtonPrimaryFontColorEnabled:
+    var(--buttonButtonFontColorsPrimaryButtonPrimaryFontColorEnabled),
+  buttonButtonFontColorsPrimaryButtonPrimaryFontColorHovered:
+    var(--buttonButtonFontColorsPrimaryButtonPrimaryFontColorHovered),
+  buttonButtonFontColorsPrimaryButtonPrimaryFontColorPrimaryDisabled:
+    var(--buttonButtonFontColorsPrimaryButtonPrimaryFontColorPrimaryDisabled),
+  buttonButtonFontColorsInverseButtonInverseFontColorEnabled:
+    var(--buttonButtonFontColorsInverseButtonInverseFontColorEnabled),
+  buttonButtonFontColorsInverseButtonInverseFontColorHovered:
+    var(--buttonButtonFontColorsInverseButtonInverseFontColorHovered),
+  buttonButtonFontColorsInverseButtonInverseFontColorInverseDisabled:
+    var(--buttonButtonFontColorsInverseButtonInverseFontColorInverseDisabled),
+  buttonButtonShapeColorsNeutralButtonNeutralShapeColorDisabled:
+    var(--buttonButtonShapeColorsNeutralButtonNeutralShapeColorDisabled),
+  buttonButtonShapeColorsNeutralButtonNeutralShapeColorHovered:
+    var(--buttonButtonShapeColorsNeutralButtonNeutralShapeColorHovered),
+  buttonButtonShapeColorsNeutralButtonNeutralShapeColorEnabled:
+    var(--buttonButtonShapeColorsNeutralButtonNeutralShapeColorEnabled),
+  buttonButtonFontColorsNeutralButtonNeutralFontColorHovered:
+    var(--buttonButtonFontColorsNeutralButtonNeutralFontColorHovered),
+  buttonButtonFontColorsNeutralButtonNeutralFontColorDisabled:
+    var(--buttonButtonFontColorsNeutralButtonNeutralFontColorDisabled),
+  buttonButtonFontColorsNeutralButtonNeutralFontColorEnabled:
+    var(--buttonButtonFontColorsNeutralButtonNeutralFontColorEnabled),
+  buttonButtonStrokeColorsButtonNeutralStrokeColorDisabled:
+    var(--buttonButtonStrokeColorsButtonNeutralStrokeColorDisabled),
+  buttonButtonStrokeColorsButtonNeutralStrokeColorEnabled:
+    var(--buttonButtonStrokeColorsButtonNeutralStrokeColorEnabled),
+  buttonButtonShapeColorsLightButtonLightShapeColorDisabled2:
+    var(--buttonButtonShapeColorsLightButtonLightShapeColorDisabled2),
+  buttonButtonShapeColorsLightButtonLightShapeColorHovered2:
+    var(--buttonButtonShapeColorsLightButtonLightShapeColorHovered2),
+  buttonButtonShapeColorsLightButtonLightShapeColorEnabled:
+    var(--buttonButtonShapeColorsLightButtonLightShapeColorEnabled),
+  buttonButtonFontColorsLightButtonLightFontColorPrimaryDisabled:
+    var(--buttonButtonFontColorsLightButtonLightFontColorPrimaryDisabled),
+  buttonButtonFontColorsLightButtonLightFontColorHovered:
+    var(--buttonButtonFontColorsLightButtonLightFontColorHovered),
+  buttonButtonFontColorsLightButtonLightFontColorEnabled:
+    var(--buttonButtonFontColorsLightButtonLightFontColorEnabled),
+  buttonButtonStrokeColorsButtonInverseStrokeColorEnabled:
+    var(--buttonButtonStrokeColorsButtonInverseStrokeColorEnabled),
+  shadowColorSm: var(--shadowColorSm),
+  shadowColorMd: var(--shadowColorMd),
+  neutralColorsGrey700: var(--neutralColorsGrey700),
+  neutralColorsGrey800: var(--neutralColorsGrey800),
+  neutralColorsGrey900: var(--neutralColorsGrey900),
+  fontFontColorFontPrimaryTitle: var(--fontFontColorFontPrimaryTitle),
+  fontFontColorFontWhite: var(--fontFontColorFontWhite),
+  fontFontColorFontPrimaryColorful: var(--fontFontColorFontPrimaryColorful),
+  inputInputBg: var(--inputInputBg),
+  inputInputStroke: var(--inputInputStroke),
+  inputInputFontColor: var(--inputInputFontColor),
+  inputInputStrokeError: var(--inputInputStrokeError),
+  inputInputFontColorError: var(--inputInputFontColorError),
+  inputInputFontColorFilled: var(--inputInputFontColorFilled),
+  opacityWhiteOpacity0: var(--opacityWhiteOpacity0),
+  fontColorsPrimarytitle: var(--fontColorsPrimarytitle),
+  fontColorsPrimarybody: var(--fontColorsPrimarybody),
+  fontColorsPrimaryColorful: var(--fontColorsPrimaryColorful),
+  fontColorsWhite: var(--fontColorsWhite),
+  fontColorsTextColorful: var(--fontColorsTextColorful),
+  fontColorsGrey: var(--fontColorsGrey),
+);

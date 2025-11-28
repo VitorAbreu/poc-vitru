@@ -1,13 +1,15 @@
 <router-outlet />
 <div class="fixed z-999">
-  <!-- <button (click)="toggleTheme()" class="rounded-3xl bg-black text-white px-4 py-2">
-    toggle theme
-  </button> -->
   <button (click)="toggleBrand()" class="rounded-3xl bg-black text-white px-4 py-2">
     toggle marca
   </button>
+  @if (brand() == 'uniasselvi') {
+    <button (click)="toggleTheme()" class="rounded-3xl bg-black text-white px-4 py-2">
+      toggle theme
+    </button>
+  }
 </div>
-<app-section>
+<app-section backgroundClass="bg-white">
   <app-carousel />
 </app-section>
 <app-section

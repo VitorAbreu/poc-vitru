@@ -1,0 +1,35 @@
+@use '../tokens/primitives/unicesumar_primitive-colors' as brand;
+@use 'sass:map';
+
+[data-brand='unicesumar'] {
+  --brandColorsPrimary100: #{map.get(brand.$brand-unicesumar-primitives, color-navy-100)};
+  --brandColorsPrimary300: #{map.get(brand.$brand-unicesumar-primitives, color-navy-300)};
+  --brandColorsPrimary500: #{map.get(brand.$brand-unicesumar-primitives, color-navy-500)};
+  --brandColorsPrimary700: #{map.get(brand.$brand-unicesumar-primitives, color-navy-700)};
+  --brandColorsPrimary900: #{map.get(brand.$brand-unicesumar-primitives, color-navy-900)};
+  --brandColorsSecondary100: #{map.get(brand.$brand-unicesumar-primitives, color-blue-100)};
+  --brandColorsSecondary300: #{map.get(brand.$brand-unicesumar-primitives, color-blue-300)};
+  --brandColorsSecondary500: #{map.get(brand.$brand-unicesumar-primitives, color-blue-500)};
+  --brandColorsSecondary700: #{map.get(brand.$brand-unicesumar-primitives, color-blue-700)};
+  --brandColorsSecondary900: #{map.get(brand.$brand-unicesumar-primitives, color-blue-900)};
+  --brandColorsAccent100: #{map.get(brand.$brand-unicesumar-primitives, color-cyan-100)};
+  --brandColorsAccent300: #{map.get(brand.$brand-unicesumar-primitives, color-cyan-300)};
+  --brandColorsAccent500: #{map.get(brand.$brand-unicesumar-primitives, color-cyan-500)};
+  --brandColorsAccent700: #{map.get(brand.$brand-unicesumar-primitives, color-cyan-700)};
+  --brandColorsAccent900: #{map.get(brand.$brand-unicesumar-primitives, color-cyan-900)};
+  --neutralColorsWhite: #{map.get(brand.$brand-unicesumar-primitives, color-white)};
+  --neutralColorsGrey100: #{map.get(brand.$brand-unicesumar-primitives, color-grey-100)};
+  --neutralColorsGrey200: #{map.get(brand.$brand-unicesumar-primitives, color-grey-200)};
+  --neutralColorsGrey300: #{map.get(brand.$brand-unicesumar-primitives, color-grey-300)};
+  --neutralColorsGrey400: #{map.get(brand.$brand-unicesumar-primitives, color-grey-400)};
+  --neutralColorsGrey500: #{map.get(brand.$brand-unicesumar-primitives, color-grey-500)};
+  --neutralColorsGrey600: #{map.get(brand.$brand-unicesumar-primitives, color-grey-600)};
+  --neutralColorsBlack: #{map.get(brand.$brand-unicesumar-primitives, color-black)};
+
+  --fontColorsPrimarytitle: #{map.get(brand.$brand-unicesumar-primitives, color-navy-900)};
+  --fontColorsPrimarybody: #{map.get(brand.$brand-unicesumar-primitives, color-black)};
+  --fontColorsPrimaryColorful: #{map.get(brand.$brand-unicesumar-primitives, color-navy-900)};
+  --fontColorsWhite: #{map.get(brand.$brand-unicesumar-primitives, color-white)};
+  --fontColorsTextColorful: #{map.get(brand.$brand-unicesumar-primitives, color-blue-700)};
+  --fontColorsGrey: #{map.get(brand.$brand-unicesumar-primitives, color-grey-600)};
+}

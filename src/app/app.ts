@@ -13,17 +13,17 @@ import { ClassFree } from './shared/components/class-free/class-free';
 })
 export class App {
   protected readonly title = signal('poc-vitru-ds');
-  // theme = signal<'light' | 'dark'>(localStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
+  theme = signal<'light' | 'dark'>(localStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
   brand = signal<'uniasselvi' | 'unicesumar'>(
     localStorage.getItem('brand') === 'unicesumar' ? 'unicesumar' : 'uniasselvi'
   );
 
   constructor() {
-    // effect(() => {
-    //   const theme = this.theme();
-    //   document.documentElement.setAttribute('data-theme', theme);
-    //   localStorage.setItem('theme', theme);
-    // });
+    effect(() => {
+      const theme = this.theme();
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    });
 
     effect(() => {
       const brand = this.brand();
@@ -32,9 +32,9 @@ export class App {
     });
   }
 
-  // toggleTheme(): void {
-  //   this.theme.set(this.theme() === 'dark' ? 'light' : 'dark');
-  // }
+  toggleTheme(): void {
+    this.theme.set(this.theme() === 'dark' ? 'light' : 'dark');
+  }
 
   toggleBrand(): void {
     this.brand.set(this.brand() === 'uniasselvi' ? 'unicesumar' : 'uniasselvi');

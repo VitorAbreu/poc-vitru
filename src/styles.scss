@@ -1,8 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+/// Ordem de imports (importante):
+/// 1. Semânticos (define $semantic-tokens Sass map)
+/// 2. Primitivos (define primitivos Sass map)
+/// 3. Tema (compila CSS vars + aplica ao DOM)
+/// 4. Tailwind (utilities)
+
+@use 'sass:map';
+@use './app/shared/design_system/tokens/semantic/semantic' as *;
+@use './app/shared/design_system/tokens/primitives/uniasselvi_primitive-colors';
+@use './app/shared/design_system/tokens/primitives/unicesumar_primitive-colors';
+@use './app/shared/design_system/themes/uniasselvi_light';
+@use './app/shared/design_system/themes/uniasselvi_dark';
+@use './app/shared/design_system/themes/unicesumar_light';
 @import 'tailwindcss';
+
+@function token($name) {
+  @return map.get($semantic-tokens, $name);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     font-family: 'Onest', sans-serif;
   }
 }
@@ -11,7 +30,7 @@ body {
   font-family: 'Onest', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     font-family: 'Onest', sans-serif;
   }
 }
@@ -20,7 +39,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
   font-style: normal;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     font-family: 'Onest', sans-serif;
   }
 }
@@ -29,7 +48,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
   font-style: normal;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     font-family: 'Onest', sans-serif;
   }
 }
@@ -38,7 +57,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   font-style: normal;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     font-family: 'Onest', sans-serif;
   }
 }
@@ -47,7 +66,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 600;
   font-style: normal;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     font-family: 'Onest', sans-serif;
   }
 }
@@ -56,7 +75,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
   font-style: normal;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     font-family: 'Onest', sans-serif;
   }
 }
@@ -65,7 +84,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 900;
   font-style: normal;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     font-family: 'Onest', sans-serif;
   }
 }
@@ -100,95 +119,44 @@ body {
   font-style: italic;
 }
 
-:root[data-brand='uniasselvi'][data-theme='light'] {
-  --brandColorsPrimary100: #fffeee;
-  --brandColorsPrimary300: #fff8b0;
-  --brandColorsPrimary500: #ffea00;
-  --brandColorsPrimary700: #e7d300;
-  --brandColorsPrimary900: #cebd00;
-  --brandColorsSecondary100: #e9f3f2;
-  --brandColorsSecondary300: #b5e1db;
-  --brandColorsSecondary500: #00a6a6;
-  --brandColorsSecondary700: #008f8f;
-  --brandColorsSecondary900: #006666;
-  --neutralColorsGrey100: #eceeee;
-  --neutralColorsGrey600: #616867;
-}
-
-// :root[data-brand='uniasselvi'][data-theme='dark'] {
-
-// }
-
-:root[data-brand='unicesumar'][data-theme='light'] {
-  --brandColorsPrimary100: #ddf2ff;
-  --brandColorsPrimary300: #5fb8fc;
-  --brandColorsPrimary500: #0084da;
-  --brandColorsPrimary700: #023860;
-  --brandColorsPrimary900: #0e3043;
-  --brandColorsSecondary100: #eaf6fe;
-  --brandColorsSecondary300: #b1e2ff;
-  --brandColorsSecondary500: #246bf7;
-  --brandColorsSecondary700: #0a4694;
-  --brandColorsSecondary900: #07233e;
-  --neutralColorsGrey100: #edf1f2;
-  --neutralColorsGrey600: #66747e;
-}
-
-$bg-primary-100: var(--brandColorsPrimary100);
-$bg-primary-300: var(--brandColorsPrimary300);
-$bg-primary-500: var(--brandColorsPrimary500);
-$bg-primary-700: var(--brandColorsPrimary700);
-$bg-primary-900: var(--brandColorsPrimary900);
-
-$bg-secondary-100: var(--brandColorsSecondary100);
-$bg-secondary-300: var(--brandColorsSecondary300);
-$bg-secondary-500: var(--brandColorsSecondary500);
-$bg-secondary-700: var(--brandColorsSecondary700);
-$bg-secondary-900: var(--brandColorsSecondary900);
-$bg-neutral-100: var(--neutralColorsGrey100);
-$bg-neutral-600: var(--neutralColorsGrey600);
-
-$color-surface: var(--color-surface);
-$color-text: var(--color-text);
-$color-accent: var(--color-accent);
-$color-border: var(--color-border);
-
-// Alias
-$color-bg: $color-surface;
-
 .button-border-radius {
   border-radius: 500px;
-  text-transform: uppercase;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     border-radius: 8px;
+  }
+}
+
+.button-text {
+  text-transform: uppercase;
+  [data-brand='unicesumar'] & {
     text-transform: none;
   }
 }
 
 .paragraphVagas {
-  color: black;
-  [data-brand='unicesumar'][data-theme='light'] & {
-    color: white;
+  color: token(neutralColorsBlack);
+  [data-brand='unicesumar'] & {
+    color: token(neutralColorsWhite);
   }
 }
 
 .titleVagas {
-  color: black;
-  [data-brand='unicesumar'][data-theme='light'] & {
-    color: #4bdeff;
+  color: token(neutralColorsBlack);
+  [data-brand='unicesumar'] & {
+    color: token(brandColorsAccent500);
   }
 }
 
 .linkColor {
-  color: $bg-secondary-900;
-  [data-brand='unicesumar'][data-theme='light'] & {
-    color: #4bdeff;
+  color: token(brandColorsSecondary900);
+  [data-brand='unicesumar'] & {
+    color: token(brandColorsAccent500);
   }
 }
 
 .border-button {
   border-color: #cfd3d3;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     border-color: #07233e;
   }
 }
@@ -196,63 +164,90 @@ $color-bg: $color-surface;
 .bg-button-color {
   background-color: #000000;
 
-  [data-brand='unicesumar'][data-theme='light'] & {
+  [data-brand='unicesumar'] & {
     background-color: #07233e;
     color: #ffffff;
   }
 }
 
 .bg-primary-100 {
-  background-color: $bg-primary-100;
+  background-color: token(brandColorsPrimary100);
 }
 .bg-primary-300 {
-  background-color: $bg-primary-300;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  background-color: token(brandColorsPrimary300);
+  [data-brand='unicesumar'] & {
     background-color: #f8e8e7;
   }
 }
 .bg-section {
-  background-color: $bg-primary-500;
-  [data-brand='unicesumar'][data-theme='light'] & {
-    background-color: $bg-primary-700;
+  background-color: token(brandColorsPrimary500);
+  [data-brand='unicesumar'] & {
+    background-color: token(brandColorsPrimary700);
   }
 }
 .bg-section-dual {
-  background-color: $bg-primary-500;
-  [data-brand='unicesumar'][data-theme='light'] & {
+  background-color: token(brandColorsPrimary500);
+  [data-brand='unicesumar'] & {
     background: linear-gradient(
       to bottom,
-      var(--brandColorsPrimary500) 50%,
-      var(--brandColorsPrimary700) 50%
+      token(brandColorsPrimary500) 50%,
+      token(brandColorsPrimary700) 50%
     );
   }
 }
 .bg-primary-700 {
-  background-color: $bg-primary-700;
+  background-color: token(brandColorsPrimary700);
 }
 .bg-primary-900 {
-  background-color: $bg-primary-900;
+  background-color: token(brandColorsPrimary900);
 }
 
 .bg-secondary-100 {
-  background-color: $bg-secondary-100;
+  background-color: token(brandColorsSecondary100);
 }
 .bg-secondary-300 {
-  background-color: $bg-secondary-300;
+  background-color: token(brandColorsSecondary300);
 }
 .bg-secondary-500 {
-  background-color: $bg-secondary-500;
+  background-color: token(brandColorsSecondary500);
 }
 .bg-secondary-700 {
-  background-color: $bg-secondary-700;
+  background-color: token(brandColorsSecondary700);
 }
 .bg-secondary-900 {
-  background-color: $bg-secondary-900;
+  background-color: token(brandColorsSecondary900);
+}
+
+.bg-white {
+  background-color: token(neutralColorsWhite);
 }
 
 .bg-neutral-100 {
-  background-color: $bg-neutral-100;
+  background-color: token(neutralColorsGrey100);
 }
 .color-neutral-600 {
-  color: $bg-neutral-600;
+  color: token(neutralColorsGrey600);
+}
+
+.border-color-neutral-200 {
+  border-color: token(neutralColorsGrey200);
+}
+
+.fontColorsPrimarytitle {
+  color: token(fontColorsPrimarytitle);
+}
+.fontColorsPrimarybody {
+  color: token(fontColorsPrimarybody);
+}
+.fontColorsPrimaryColorful {
+  color: token(fontColorsPrimaryColorful);
+}
+.fontColorsWhite {
+  color: token(fontColorsWhite);
+}
+.fontColorsTextColorful {
+  color: token(fontColorsTextColorful);
+}
+.fontColorsGrey {
+  color: token(fontColorsGrey);
 }
