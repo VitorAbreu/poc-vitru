@@ -3,12 +3,12 @@
     <h3 class="text-2xl md:text-6xl titillium-web-bold fontColorsPrimarytitle col-span-6">Cursos relacionados</h3>
     <div class="col-span-6">
       <div class="flex justify-end gap-3">
-        <button
-          class="border btnShapeColorsNeutralEnabled border-button button-text button-border-radius px-5 py-4 w-[56px] h-[48px]"
+        <button (click)="scrollLeft()"
+          class="border rotate-180 btnShapeColorsNeutralEnabled border-button button-text button-border-radius px-5 py-4 w-[56px] h-[48px]"
         >
           <img src="/icons/Vector.svg" alt="seta direita" />
         </button>
-        <button
+        <button (click)="scrollRight()"
           class="border btnShapeColorsNeutralEnabled border-button button-text button-border-radius px-5 py-4 w-[56px] h-[48px]"
         >
           <img src="/icons/Vector.svg" alt="seta direita" />
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="carousel-container scroll-p-5 md:scroll-p-20 p-5 md:p-20 my-5">
+  <div id="carousel-container-courses" class="carousel-container scroll-p-5 md:scroll-p-20 p-5 md:p-20 my-5">
     <div
       class="carousel-track grid gap-x-4 grid-flow-col sm:auto-cols-[calc((100%_-_49px)_/_2)] lg:auto-cols-[calc((100%_-_49px)_/_4)] col-span-4"
     >
@@ -38,6 +38,6 @@
     </div>
   </div>
   <div class="mt-8 md:hidden block px-6">
-    <button class="w-full border border-[#CFD3D3] rounded-4xl px-5 py-4">Explorar área</button>
+    <button class="w-full border btnShapeColorsNeutralEnabled border-[#CFD3D3] rounded-4xl px-5 py-4">Explorar área</button>
   </div>
 </div>

@@ -43,4 +43,18 @@ export class CarouselCarrers {
       imagePath: 'string',
     },
   ];
+
+  scrollLeft() {
+    const container = document.getElementById('carouselContainer');
+    if (container) {
+      container.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+  }
+
+  scrollRight() {
+    const container = document.getElementById('carouselContainer');
+    if (container) {
+      container.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  }
 }

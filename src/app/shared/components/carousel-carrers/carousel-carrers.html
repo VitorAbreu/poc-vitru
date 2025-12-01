@@ -12,18 +12,19 @@
     </h4>
     <div class="mt-12 hidden md:block md:col-span-5">
       <div class="flex justify-end gap-3">
-        <button class="bg-zinc-50 border-button button-border-radius px-5 py-4">
-          <img src="/icons/Vector.svg" alt="seta direita" />
+        <button (click)="scrollLeft()" class="btnShapeColorsNeutralEnabled rotate-180 border-button button-border-radius px-5 py-4">
+          <img src="/icons/Vector.svg" alt="voltar" />
         </button>
-        <button class="bg-zinc-50 border-button button-border-radius px-5 py-4">
-          <img src="/icons/Vector.svg" alt="seta direita" />
+        <button (click)="scrollRight()" class="btnShapeColorsNeutralEnabled border-button button-border-radius px-5 py-4">
+          <img src="/icons/Vector.svg" alt="avançar" />
         </button>
       </div>
     </div>
   </div>
-  <div class="carousel-container my-5">
+  <div id="carouselContainer" class="carousel-container my-5">
     @for (item of items; track $index) {
     <app-card-carrers class="carousel-card md:first:ml-20 first:ml-6" [card]="item" />
     }
+    <div class="spacer"></div>
   </div>
 </div>

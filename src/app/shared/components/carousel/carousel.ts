@@ -46,5 +46,17 @@ export class Carousel {
     },
   ]);
 
-  scrollToNextCard(direction: 'left' | 'right') {}
+  scrollLeft() {
+    const container = document.getElementById('carousel-container-courses');
+    if (container) {
+      container.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+  }
+
+  scrollRight() {
+    const container = document.getElementById('carousel-container-courses');
+    if (container) {
+      container.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  }
 }
