@@ -35,4 +35,12 @@
   --fontColorsWhite: #{map.get(brand.$brand-uniasselvi-primitives, color-white)};
   --fontColorsTextColorful: #{map.get(brand.$brand-uniasselvi-primitives, color-teal-300)};
   --fontColorsGrey: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-300)};
+
+  --buttonButtonShapeColorsNeutralButtonNeutralShapeColorEnabled: #{map.get(
+      brand.$brand-uniasselvi-primitives,
+      color-white
+    )};
+
+  --iptFontColorEnabled: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-600)};
+  --iptBgColorEnabled: #{map.get(brand.$brand-uniasselvi-primitives, color-grey-700)};
 }

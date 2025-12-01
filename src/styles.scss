@@ -190,7 +190,7 @@ body {
   [data-brand='unicesumar'] & {
     background: linear-gradient(
       to bottom,
-      token(brandColorsPrimary500) 50%,
+      token(brandColorsSecondary500) 50%,
       token(brandColorsPrimary700) 50%
     );
   }
@@ -250,4 +250,16 @@ body {
 }
 .fontColorsGrey {
   color: token(fontColorsGrey);
+}
+
+.btnShapeColorsNeutralEnabled {
+  background-color: token(buttonButtonShapeColorsNeutralButtonNeutralShapeColorEnabled);
+}
+
+.iptBackgroundEnabled {
+  background-color: token(iptBgColorEnabled);
+}
+
+.iptfontColorEnabled::placeholder {
+  color: token(iptFontColorEnabled);
 }

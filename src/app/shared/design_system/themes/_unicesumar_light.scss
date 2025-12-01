@@ -32,4 +32,12 @@
   --fontColorsWhite: #{map.get(brand.$brand-unicesumar-primitives, color-white)};
   --fontColorsTextColorful: #{map.get(brand.$brand-unicesumar-primitives, color-blue-700)};
   --fontColorsGrey: #{map.get(brand.$brand-unicesumar-primitives, color-grey-600)};
+
+  --buttonButtonShapeColorsNeutralButtonNeutralShapeColorEnabled: #{map.get(
+      brand.$brand-unicesumar-primitives,
+      color-white
+    )};
+
+  --iptFontColorEnabled: #{map.get(brand.$brand-unicesumar-primitives, color-grey-600)};
+  --iptBgColorEnabled: #{map.get(brand.$brand-unicesumar-primitives, color-white)};
 }

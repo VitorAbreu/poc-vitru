@@ -9,8 +9,10 @@
   border-top-right-radius: 250px 100px;
 }
 :host {
-  &:has(+ .sobreposition) div.background {
-    padding-bottom: 5rem;
+  [data-brand='uniasselvi'] & {
+    &:has(+ .sobreposition) div.background {
+      padding-bottom: 5rem;
+    }
   }
   &.sobreposition > div {
     position: relative;
